@@ -1,0 +1,19 @@
+ControlFocus("Open","","Edit1")
+//ControlFocus(title, text, ControlId)
+
+ControlSetText("Open","","Edit1","G:\SW testing online\Test-Plan-Doc.docx")
+//ControlSetText(title, text, ControlId, Filepath)
+
+ControlClick("Open","","Button1")
+//ControlClick(title, text, ControlId)
+
+/* Step by step instruction
+  1. The above code should be written in SciTE.exe, present in the folder SciTE of your AutoIT3 folder present at C.
+  2. After that, save it and select save location as the location of your workspace project folder, before saving it; create a 
+     folder(for example:script) and save that in that location named(for example:fileUpload.au3).
+  Note: File should be saved in .au3 format
+  3. After saving goto the script folder present at ur project folder and right click on your saved .au3 file and then click on 
+  'CompleScriptx64' if ur window is of 64bits or 'CompileScriptx86' if your window is of 32bits.
+  4. Then a .exe file will be created with the name same as that of .au3 file
+  5. Use that .exe file location in your selenium code or just double click the .exe file that will automatically upload file for you
+*/
