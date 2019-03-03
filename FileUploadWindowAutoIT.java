@@ -32,6 +32,7 @@ public class FileUploadWindowAutoIT {
 		
 		Thread.sleep(2000);
 		Runtime.getRuntime().exec("C:\\Users\\Shubham\\workspace\\Yatra\\scripts\\filleupload.exe");
+		//location of autoIt fileupload.exe is given in above code. Just the above line is needed for autoIT
 		
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[@id='processTask']")).click();
