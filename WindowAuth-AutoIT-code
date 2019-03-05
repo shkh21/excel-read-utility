@@ -1,0 +1,6 @@
+$title="Authentication Required"
+WinWaitActive($title)
+Send("johndoe")
+Send("{TAB}")
+Send("pass123")
+Send("{ENTER}")
