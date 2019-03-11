@@ -35,14 +35,14 @@ public class CheckLin {
   public void f() {
 	  try {
 			invalidLinksCount = 0;
-			List<WebElement> anchorTagsList = driver.findElements(By.tagName("img"));
+			List<WebElement> anchorTagsList = driver.findElements(By.tagName("a"));
 			System.out.println("Total no. of links are "
 					+ anchorTagsList.size());
 			for (WebElement anchorTagElement : anchorTagsList) {
 				if (anchorTagElement != null) {
 					String url = anchorTagElement.getAttribute("href");
-					String link=anchorTagElement.getAttribute("src");
-					System.out.println("Src is: "+link+" Url is: "+url);
+					//String link=anchorTagElement.getAttribute("src");
+					System.out.println(" Url is: "+url);
 					if (url != null && !url.contains("javascript")) {
 						verifyURLStatus(url);
 					} else {
