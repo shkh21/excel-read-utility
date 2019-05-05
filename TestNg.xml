@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="yatra suite">
+   <listeners>
+       <listener class-name="customListeners.CustomListeners" />
+   </listeners>
+    <test name="yatra test">
+         <groups>
+             <define name="listAssert group">
+                 <include name="listAssert" />
+             </define>
+             <define name="domInter group">
+                 <include name="domInter" />
+             </define>
+             <define name="holidays group">
+                 <include name="holidays" />
+             </define>
+             <define name="hotels group">
+                <include name="hotels" />
+             </define>
+             <define name="hotelcity group">
+                <include name="hotelcity" />
+             </define>
+             <run>
+                 <include name="hotelcity group" />
+             </run>
+         </groups>
+         <classes>
+             <class name="Testing.AllTest" />
+         </classes>
+    </test>
+</suite>
